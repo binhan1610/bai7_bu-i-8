@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<main>
+    <p>tong cac so tu 1 den n la <a id="an"></a></p>
+</main>
+<body>
+    <script>
+        let an;
+        an=prompt('nhap vao 1 so')
+        let tong=0;
+        for(let i=0;i<=an;i++)
+        {
+            tong+=i;
+        }
+        document.getElementById("an").innerHTML = tong;
+    </script>
+</body>
+</html>

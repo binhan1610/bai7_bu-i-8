@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<main>
+    <p id="an"></p>
+</main>
+<body>
+    <script>
+        let an=prompt('nhap vao 1 so')
+        an=Number(an)
+        
+        let binh='';
+        for(let i=2;i<=an;i++)
+        {
+            let dem=0;
+            for(let j=2;j<=Math.sqrt(i);j++)
+              { 
+                 if(i%j==0)
+                 {
+                dem++;
+                 }  
+              }
+              if(dem==0)
+                 {
+                  binh+=i+"\n"
+                 }
+        }
+        document.getElementById("an").innerHTML = binh;
+    </script>
+</body>
+</html>
